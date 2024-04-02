@@ -1,5 +1,16 @@
 import Image from "next/image";
 
+export const test = () => {
+  let url = 'http://example.org/auth';
+let username = 'user';
+let password = 'passwd';
+
+let headers = new Headers();
+
+headers.append('Content-Type', 'text/json');
+headers.append('Authorization', 'Basic' + username + ":" + password);
+};
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
